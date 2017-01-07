@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XuL-kr-ewR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ZXu-jt-I9D">
+            <objects>
+                <navigationController storyboardIdentifier="mainNavigationController" id="XuL-kr-ewR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ylc-jt-RZT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="a3x-wQ-ZxL" kind="relationship" relationship="rootViewController" id="qsi-QQ-wYb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2b-MH-4gt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2220" y="-564"/>
+        </scene>
+        <!--Symptomen-->
+        <scene sceneID="Vjf-eu-4av">
+            <objects>
+                <tableViewController storyboardIdentifier="SymtomenScene" title="Symptomen" id="a3x-wQ-ZxL" customClass="SymptomenViewController" customModule="First_Aid" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="J6P-6Q-7wj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Symptoom" id="b3d-OX-HmS" customClass="SymptoomPreview" customModule="First_Aid" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b3d-OX-HmS" id="lJQ-2m-1ol">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHn-Is-KF9">
+                                            <rect key="frame" x="10" y="6.5" width="355" height="31"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symptoom" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhS-Sl-jzh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="250" id="Fjc-Kg-BNm"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iu6-ez-nA8">
+                                                    <rect key="frame" x="250" y="0.0" width="107" height="31"/>
+                                                    <connections>
+                                                        <action selector="voegSymptoomToe:" destination="a3x-wQ-ZxL" eventType="valueChanged" id="PRE-4K-23B"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hhS-Sl-jzh" firstAttribute="height" secondItem="cHn-Is-KF9" secondAttribute="height" id="IF7-HA-WPT"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cHn-Is-KF9" firstAttribute="centerX" secondItem="lJQ-2m-1ol" secondAttribute="centerX" id="6WT-WO-eU0"/>
+                                        <constraint firstItem="cHn-Is-KF9" firstAttribute="centerY" secondItem="lJQ-2m-1ol" secondAttribute="centerY" id="jxP-tl-oPr"/>
+                                        <constraint firstItem="cHn-Is-KF9" firstAttribute="width" secondItem="lJQ-2m-1ol" secondAttribute="width" constant="-20" id="sBr-r4-YhT"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="aanwezig" destination="iu6-ez-nA8" id="fM7-kH-g1w"/>
+                                    <outlet property="symptoom" destination="hhS-Sl-jzh" id="lqD-TK-bfW"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="a3x-wQ-ZxL" id="ozZ-6q-DAD"/>
+                            <outlet property="delegate" destination="a3x-wQ-ZxL" id="A8c-Nv-AQa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Symptomen" id="e9L-YD-0iL">
+                        <barButtonItem key="leftBarButtonItem" title="Reset" id="f0o-wb-YDX">
+                            <connections>
+                                <action selector="reset:" destination="a3x-wQ-ZxL" id="Y1e-yi-RN4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Ongevallen" id="WpJ-AZ-Z5F">
+                            <connections>
+                                <segue destination="0HQ-ug-pUH" kind="show" identifier="ongevallen" id="8OK-pe-SzQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wVY-AS-i6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1430" y="-564"/>
+        </scene>
+        <!--Ongeval-->
+        <scene sceneID="RAo-dO-PLO">
+            <objects>
+                <tableViewController storyboardIdentifier="OngevalScene" title="Ongeval" id="T3K-xQ-Z0f" customClass="OngevalViewController" customModule="First_Aid" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="2b8-1V-AWC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Detail" id="pYJ-jF-bt3">
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pYJ-jF-bt3" id="npt-zc-3PQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucg-A9-NsL">
+                                            <rect key="frame" x="28" y="21.5" width="300" height="0.0"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="300" id="Ur3-DF-wHh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ucg-A9-NsL" firstAttribute="centerY" secondItem="npt-zc-3PQ" secondAttribute="centerY" id="DjD-Pb-ceQ"/>
+                                        <constraint firstItem="ucg-A9-NsL" firstAttribute="leading" secondItem="npt-zc-3PQ" secondAttribute="leadingMargin" constant="20" id="nYc-hc-XbF"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="T3K-xQ-Z0f" id="rlv-xY-MEj"/>
+                            <outlet property="delegate" destination="T3K-xQ-Z0f" id="rxd-Qm-jRw"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Ongeval" id="0Qg-z0-dA1">
+                        <barButtonItem key="leftBarButtonItem" title="Annuleer" id="ijQ-YP-Ait">
+                            <connections>
+                                <segue destination="Soz-ey-kvU" kind="unwind" unwindAction="unwindFromOngeval:" id="CvC-BH-lfA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Bel 112" id="AiS-iX-iTp">
+                            <connections>
+                                <action selector="bel112:" destination="T3K-xQ-Z0f" id="E64-5e-uiz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tbA-Pn-l0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Soz-ey-kvU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="17" y="-564"/>
+        </scene>
+        <!--Ongevallen-->
+        <scene sceneID="Bjn-xa-gmc">
+            <objects>
+                <tableViewController storyboardIdentifier="OngevallenScene" title="Ongevallen" id="0HQ-ug-pUH" customClass="OngevallenViewController" customModule="First_Aid" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="py2-om-HUk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Ongeval" id="hgS-sb-e1j" customClass="OngevalPreview" customModule="First_Aid" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hgS-sb-e1j" id="i4E-xY-Xt9">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ongeval" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42J-Eh-vBA">
+                                            <rect key="frame" x="20" y="11" width="335" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ongeval" destination="42J-Eh-vBA" id="PGH-E8-OKk"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0HQ-ug-pUH" id="ttD-71-9Ke"/>
+                            <outlet property="delegate" destination="0HQ-ug-pUH" id="jDU-gw-Kga"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Ongevallen" prompt="gesorteerd op toepasselijkheid" id="L1e-n2-tZS">
+                        <barButtonItem key="leftBarButtonItem" title="Terug" id="Uhx-vQ-aew">
+                            <connections>
+                                <segue destination="Ux1-wy-bt4" kind="unwind" unwindAction="unwindFromOngevallen:" id="wCt-Zf-OkY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="T3K-xQ-Z0f" kind="show" identifier="Ongeval" id="PDP-Gn-W42"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CuZ-km-ea3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ux1-wy-bt4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-698" y="-564"/>
+        </scene>
+    </scenes>
+</document>
