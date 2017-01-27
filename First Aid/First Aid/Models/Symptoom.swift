@@ -35,3 +35,26 @@ extension Symptoom: CustomStringConvertible{
         }
     }
 }
+
+extension Symptoom {
+    
+    init?(description: String) {
+        switch description {
+            case "Buiten bewustzijn": self = .buitenBewustzijn
+            case "Pijn": self = .pijn
+            case "Bleek": self = .bleek
+            case "Misselijk": self = .misselijk
+            case "Zwakke hartslag": self = .zwakkeHartslag
+            case "Snelle hartslag": self = .snelleHartslag
+            case "Beschadigde huid": self = .beschadigdeHuid
+            case "Lidmaat staat verkeerd": self = .lidmaatStaatVerkeerd
+            case "Verlamd": self = .verlamd
+            case "Schokken": self = .schokken
+            case "Zwarte vlekken voor de ogen": self = .vlekken
+            case "Trage reactie": self = .trageReactie
+            case "Kramp": self = .kramp
+            case "Geen steun": self = .geenSteun
+        default: return nil
+        }
+    }
+}

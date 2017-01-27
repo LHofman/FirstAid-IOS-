@@ -1,0 +1,59 @@
+{
+"ongevallen": [
+ {
+  "naam": "hartinfarct",
+   "symptomen": [
+    "Pijn", "Zwakke hartslag", "Snelle hartslag", "Misselijk", "Bleek"
+   ],
+   "behandeling": [
+    "Bel onmiddellijk de 112", "Geef hem/haar genoeg ruimte om te kunnen rusten en maak spannende kledij los", "Breng hem/haar indien nodig naar een plek met meer zuurstof en leg het slachtoffer in een comfortabele houding", "Vraag hem/haar om eventuele eigen medicatie"
+   ]
+ },
+ {
+  "naam": "flauwte",
+  "symptomen": [
+                "Bleek", "Misselijk", "Zwarte vlekken voor de ogen"
+                ],
+  "behandeling": [
+                  "Leg hem/haar plat op de grond zodat de bloedtoevoer naar de hersenen loopt", "Controleer de val, leg hem/haar in stabiele zijliving", "Zorg voor genoeg frisse lucht (haal eventueel een vochtig doekje", "Maak knellende kledij los", "Als het langer dan 2 minuten duurt, bel dan de hulpdiensten"
+                                                                                                                                                                                         ]
+                                                                                                                                                                                         },
+                                                                                                                                                                                         {
+                                                                                                                                                                                         "naam": "beroerte",
+                                                                                                                                                                                         "symptomen": [
+                                                                                                                                                                                                       "Verlamd", "Buiten bewustzijn", "Misselijk"
+                                                                                                                                                                                                       ],
+                                                                                                                                                                                         "behandeling": [
+                                                                                                                                                                                                         "Gebruik de FAST-test:", "1, Kijk of het gezicht schuin hangt", "2, Vraag het slachtoffer om de ogen te sluiten en beide armen in de lucht te steken", "3, Controleer of de spraak van het slachtoffer normaal is", "4, Probeer de tijd van de beroerte te achterhalen", "Bel zo snel mogelijk de 112!", "Geef het slachtoffer ondersteuning en zorg voor een comfortabele houding", "Blijf het bewustzijn en de ademhaling controleren"
+                                                                                                                                                                                                         ]
+                                                                                                                                                                                         },
+                                                                                                                                                                                         {
+                                                                                                                                                                                         "naam": "epilepsie",
+                                                                                                                                                                                         "symptomen": [
+                                                                                                                                                                                                       "Buiten bewustzijn", "Schokken", "Trage reactie"
+                                                                                                                                                                                                       ],
+                                                                                                                                                                                         "behandeling": [
+                                                                                                                                                                                                         "Probeer om blessures van het slachtoffer en iedereen in de nabije omgeving te voorkomen tijdens de schokken door hem/haar genoeg ruimte te geven", "Noteer de duur en de reacties van de schokken", "Bel de 112 bij een aanval die langer dan 1 minuut duurt", "Bel de 112 bij bewusteloosheid na een aanval"
+                                                                                                                                                                                                         ]
+                                                                                                                                                                                        },
+                                                                                                                                                                                         {
+                                                                                                                                                                                         "naam": "hyperventilatie",
+                                                                                                                                                                                         "symptomen": [
+                                                                                                                                                                                                       "Snelle hartslag", "Misselijk", "Kramp"
+                                                                                                                                                                                                       ],
+                                                                                                                                                                                         "behandeling": [
+                                                                                                                                                                                                         "Breng het slachtoffer naar een rustige plek om te kalmeren", "Blijf steeds bij het slachtoffer", "Laat hem/haar in een zak blazen om de ademhaling te kalmeren", "Als het blijft aanhouden bel dan de hulpdiensten"
+                                                                                                                                                                                                         ]
+                                                                                                                                                                                         },
+                                                                                                                                                                                         {
+                                                                                                                                                                                         "naam": "letsel",
+                                                                                                                                                                                         "symptomen": [
+                                                                                                                                                                                                       "Pijn", "Lidmaat staat verkeerd", "Geen steun"
+                                                                                                                                                                                                       ],
+                                                                                                                                                                                         "behandeling": [
+                                                                                                                                                                                                         "Leg ijs op de wonde", "Hou het lidmaat onbeweeglijk", "Zet het lidmaat indien in abnormale staat nooit zelf terug, maar bel de hulpdiensten", "Stelp de bloeding", "Bij spierpijn: neem een warm bad/douche", "Bij spierkramp: rek/masseer het weefsel", "Bij spierverrekking: raadpleeg een arts"
+                                                                                                                                                                                                         ]
+                                                                                                                                                                                         }
+                                                                                                                                                                                         ]
+
+                                                                                                                                                                                         }

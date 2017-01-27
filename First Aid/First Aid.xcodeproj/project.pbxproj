@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		D23C01DB1E1944D900B51935 /* Symptoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23C01DA1E1944D900B51935 /* Symptoom.swift */; };
 		D23C01DD1E1947F500B51935 /* Ongeval.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23C01DC1E1947F500B51935 /* Ongeval.swift */; };
-		D23C01DF1E194AE000B51935 /* DataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23C01DE1E194AE000B51935 /* DataClass.swift */; };
 		D23C01E11E19572300B51935 /* FirstAid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23C01E01E19572300B51935 /* FirstAid.swift */; };
 		D241A0D11E1D44F600B129EE /* SymptomenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D241A0D01E1D44F600B129EE /* SymptomenViewController.swift */; };
 		D241A0D31E1D450700B129EE /* OngevallenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D241A0D21E1D450700B129EE /* OngevallenViewController.swift */; };
 		D241A0D51E1D451100B129EE /* OngevalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D241A0D41E1D451100B129EE /* OngevalViewController.swift */; };
 		D241A0DC1E1D502C00B129EE /* SymptoomPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D241A0DB1E1D502C00B129EE /* SymptoomPreview.swift */; };
 		D24B77EF1E21383C00963290 /* OngevalPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B77EE1E21383C00963290 /* OngevalPreview.swift */; };
+		D29577991E3A43F700E8FDE8 /* ongevallen.json in Resources */ = {isa = PBXBuildFile; fileRef = D29577981E3A43F700E8FDE8 /* ongevallen.json */; };
 		D2ED81A71E17FBCA00385041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED81A61E17FBCA00385041 /* AppDelegate.swift */; };
 		D2ED81A91E17FBCA00385041 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ED81A81E17FBCA00385041 /* ViewController.swift */; };
 		D2ED81AC1E17FBCA00385041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ED81AA1E17FBCA00385041 /* Main.storyboard */; };
@@ -26,13 +26,13 @@
 /* Begin PBXFileReference section */
 		D23C01DA1E1944D900B51935 /* Symptoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Symptoom.swift; path = "First Aid/Models/Symptoom.swift"; sourceTree = "<group>"; };
 		D23C01DC1E1947F500B51935 /* Ongeval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ongeval.swift; path = "First Aid/Models/Ongeval.swift"; sourceTree = "<group>"; };
-		D23C01DE1E194AE000B51935 /* DataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataClass.swift; path = "First Aid/Models/DataClass.swift"; sourceTree = "<group>"; };
 		D23C01E01E19572300B51935 /* FirstAid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstAid.swift; path = "First Aid/Models/FirstAid.swift"; sourceTree = "<group>"; };
 		D241A0D01E1D44F600B129EE /* SymptomenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SymptomenViewController.swift; path = "First Aid/ViewControllers/SymptomenViewController.swift"; sourceTree = "<group>"; };
 		D241A0D21E1D450700B129EE /* OngevallenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OngevallenViewController.swift; path = "First Aid/ViewControllers/OngevallenViewController.swift"; sourceTree = "<group>"; };
 		D241A0D41E1D451100B129EE /* OngevalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OngevalViewController.swift; path = "First Aid/ViewControllers/OngevalViewController.swift"; sourceTree = "<group>"; };
 		D241A0DB1E1D502C00B129EE /* SymptoomPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SymptoomPreview.swift; path = Views/SymptoomPreview.swift; sourceTree = "<group>"; };
 		D24B77EE1E21383C00963290 /* OngevalPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OngevalPreview.swift; path = Views/OngevalPreview.swift; sourceTree = "<group>"; };
+		D29577981E3A43F700E8FDE8 /* ongevallen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ongevallen.json; path = Resources/ongevallen.json; sourceTree = "<group>"; };
 		D2ED81A31E17FBCA00385041 /* First Aid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "First Aid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2ED81A61E17FBCA00385041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2ED81A81E17FBCA00385041 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +58,6 @@
 			children = (
 				D23C01DA1E1944D900B51935 /* Symptoom.swift */,
 				D23C01DC1E1947F500B51935 /* Ongeval.swift */,
-				D23C01DE1E194AE000B51935 /* DataClass.swift */,
 				D23C01E01E19572300B51935 /* FirstAid.swift */,
 			);
 			name = Models;
@@ -85,6 +84,14 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		D29577971E3A43D200E8FDE8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D29577981E3A43F700E8FDE8 /* ongevallen.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		D2ED819A1E17FBC800385041 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +111,7 @@
 		D2ED81A51E17FBCA00385041 /* First Aid */ = {
 			isa = PBXGroup;
 			children = (
+				D29577971E3A43D200E8FDE8 /* Resources */,
 				D241A0DA1E1D4FFD00B129EE /* Views */,
 				D241A0CF1E1D44DB00B129EE /* Controllers */,
 				D23C01D91E19446300B51935 /* Models */,
@@ -178,6 +186,7 @@
 			files = (
 				D2ED81B11E17FBCA00385041 /* LaunchScreen.storyboard in Resources */,
 				D2ED81AE1E17FBCA00385041 /* Assets.xcassets in Resources */,
+				D29577991E3A43F700E8FDE8 /* ongevallen.json in Resources */,
 				D2ED81AC1E17FBCA00385041 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +206,6 @@
 				D241A0DC1E1D502C00B129EE /* SymptoomPreview.swift in Sources */,
 				D241A0D31E1D450700B129EE /* OngevallenViewController.swift in Sources */,
 				D23C01E11E19572300B51935 /* FirstAid.swift in Sources */,
-				D23C01DF1E194AE000B51935 /* DataClass.swift in Sources */,
 				D23C01DB1E1944D900B51935 /* Symptoom.swift in Sources */,
 				D2ED81A71E17FBCA00385041 /* AppDelegate.swift in Sources */,
 			);

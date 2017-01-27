@@ -7,11 +7,11 @@ class Ongeval{
         self.naam = naam
     }
     
-    func voegSymptomenToe(_ symptomen: Symptoom...){
+    func voegSymptomenToe(_ symptomen: [Symptoom]){
         self.symptomen.append(contentsOf: symptomen)
     }
     
-    func voegBehandelingToe(_ behandeling: String...){
+    func voegBehandelingToe(_ behandeling: [String]){
         self.behandeling.append(contentsOf: behandeling)
     }
     
